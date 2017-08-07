@@ -154,6 +154,7 @@ $text: 14px;
 $lineHeight: 22.65px;
 body {
     font-family: "Microsoft Yahei", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin: 0;
 }
 
 ul {
