@@ -33,7 +33,7 @@
                         <h3 class="title">联系方式</h3>
                         <div class="item">
                             <p class="subtitle">邮箱</p>
-                            <p class="text">admin@duohuo.org</p>
+                            <p class="text">contact@duohuo.org</p>
                         </div>
                         <div class="item">
                             <p class="subtitle">地址</p>
