@@ -125,7 +125,7 @@ export default {
         return {
             isFocus: false,
             inputs: [],
-            url: 'http://smtp.duohuo.org',
+            url: 'https://smtp.duohuo.org',
             confirmState: false,
             processingState: 'done',
             processingText: {
