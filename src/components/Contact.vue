@@ -39,7 +39,9 @@
                             <p class="subtitle">地址</p>
                             <p class="text">大学生活动中心201</p>
                         </div>
-                        <div class="QR"></div>
+                        <div class="QR">
+                            <img src="../assets/QR.png" class="qr-img">
+                        </div>
                     </div>
                     <div class="message"></div>
                 </div>
@@ -179,25 +181,38 @@ export default {
                 }
 
                 this.$http.post(this.url, data).then((response) => {
-                    // 成功发送
-                    this.processingState = 'success';
+                    // 短时间内重复发送
+                    if (response.body === 'SPAM') {
+                        alert('发送过于频繁，请一分钟后重试');
+                        this._confirmFailure();
+                        return;
+                    }
 
-                    let self = this;
-                    setTimeout(function() {
-                        self.confirmState = false;
-                        self.processingState = 'done';
-                    }, 3000);
+                    this._confirmSuccess();
                 }, (response) => {
-                    // 发送失败
-                    this.processingState = 'error';
-
-                    let self = this;
-                    setTimeout(function() {
-                        self.confirmState = false;
-                        self.processingState = 'done';
-                    }, 3000);
+                    this._confirmFailure()
                 });
             }
+        },
+        _confirmFailure: function() {
+            // 发送失败
+            this.processingState = 'error';
+
+            let self = this;
+            setTimeout(function() {
+                self.confirmState = false;
+                self.processingState = 'done';
+            }, 3000);
+        },
+        _confirmSuccess: function() {
+            // 发送成功
+            this.processingState = 'success';
+
+            let self = this;
+            setTimeout(function() {
+                self.confirmState = false;
+                self.processingState = 'done';
+            }, 3000);
         },
         initTextArea: function() {
             let textarea = this.$refs.textarea;
@@ -240,7 +255,7 @@ export default {
             let notEmpty = checkStrategyFactory['notEmpty']('输入不能为空');
             let lengthLimit16 = checkStrategyFactory['lengthLimit'](16, '不能超过16个字符');
             let lengthLimit500 = checkStrategyFactory['lengthLimit'](500, '不能超过500个字符');
-            let mailCheck = checkStrategyFactory['mail']('邮箱地址不合法');
+            let mailCheck = checkStrategyFactory['mail']('邮箱格式不正确');
             // 创建对象
             createInput(name, nameErr, [notEmpty, lengthLimit16]);
             createInput(mail, mailErr, [notEmpty, mailCheck]);
@@ -389,9 +404,12 @@ $lineHeight: 22.65px;
                         position: absolute;
                         right: 0;
                         top: 121px;
-                        background: #D7D7D7;
                         width: 150px;
                         height: 150px;
+                        .qr-img {
+                            widows: 150px;
+                            height: 150px;
+                        }
                     }
                 }
             }
