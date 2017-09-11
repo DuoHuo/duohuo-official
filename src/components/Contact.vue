@@ -37,7 +37,7 @@
                         </div>
                         <div class="item">
                             <p class="subtitle">地址</p>
-                            <p class="text">大学生活动中心201</p>
+                            <p class="text">搬迁中...地址未定</p>
                         </div>
                         <div class="QR">
                             <img src="../assets/QR.png" class="qr-img">
