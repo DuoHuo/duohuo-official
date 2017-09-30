@@ -28,8 +28,5 @@ export default new Router({
         path: '/Team',
         name: 'team',
         component: Team,
-    }],
-    scrollBehavior(to, from, savedPosition) {
-        return { x: 0, y: 0 }
-    }
+    }]
 })

@@ -107,6 +107,7 @@ export default {
     },
     watch: {
         routeName: function() {
+            this.scrollTo(0, 0.25);
             headerBgHandler[this.routeName].apply(this);
         }
     },
@@ -127,6 +128,18 @@ export default {
         },
         changePage: function(arg) {
             pageHandler[arg].apply(this);
+        },
+        scrollTo: function(to, time) {
+            let from = document.documentElement.scrollTop;
+            let speed = (to - from) / 60 / time;
+
+            let scrollId = setInterval(() => {
+                document.documentElement.scrollTop += speed;
+                if (document.documentElement.scrollTop <= to) {
+                    document.documentElement.scrollTop = to;
+                    clearInterval(scrollId);
+                }
+            }, 16);
         }
     },
     mounted: function() {

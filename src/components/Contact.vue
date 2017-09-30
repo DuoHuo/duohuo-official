@@ -4,7 +4,7 @@
             <div class="intro">
                 <h2 class="title">联系我们</h2>
                 <p class="text">
-                    这是咱的联系方式，24h开通！活动合作和意见反馈等均可通过此联系，请认真填写【鞠躬】。特别一提，如果你是想加入多火，同样可在此申请，并在留言中展示出你的技术面或学习热情。大活201,欢迎您拎包入住！
+                    这是咱的联系方式，24h开通！活动合作和意见反馈等均可通过此联系，请认真填写【鞠躬】。特别一提，如果你是想加入多火，同样可在此申请，并在留言中展示出你的技术面或学习热情。<span class="text-delete">大活201,欢迎您拎包入住！</span> 肥肠抱歉，大活201已爆炸，正在搬迁...
                 </p>
             </div>
             <div class="form">
@@ -295,6 +295,10 @@ $lineHeight: 22.65px;
 .contact {
     position: absolute;
     width: 100%;
+    .text-delete {
+        text-decoration: line-through;
+    }
+
     .content {
         box-sizing: border-box;
         width: 1200px;
