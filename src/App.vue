@@ -6,28 +6,25 @@
                     <ul class="meun">
                         <li class="meun-item">
                             <router-link class="link" to="/">主页</router-link>
-                            <i class="bar"></i>
                         </li>
                         <li class="meun-item">
                             <router-link class="link" to="/Team">团队介绍</router-link>
-                            <i class="bar"></i>
                         </li>
                         <li class="meun-item">
                             <router-link class="link" to="/Project">项目介绍</router-link>
-                            <i class="bar"></i>
                         </li>
                         <li class="meun-item">
                             <a class="link" href="https://blog.duohuo.org/" target="_blank">博客</a>
-                            <i class="bar"></i>
                         </li>
                         <li class="meun-item">
                             <router-link class="link" to="/Contact">联系我们</router-link>
-                            <i class="bar"></i>
+                        </li>
+                        <li class="meun-item">
+                            <a class="link" href="https://github.com/B-sirius/2017_duohuo_recruitment" target="_blank">2017招新</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            
             <div class="background-container">
                 <transition name="headerFade">
                     <div v-show="backgroundShow" ref="headerBackground" class="background"></div>
