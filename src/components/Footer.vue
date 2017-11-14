@@ -21,7 +21,7 @@
                 </li>
             </ul>
             <ul class="connect">
-                <li class="item">搬迁中...地址未定</li>
+                <li class="item">学科2号楼C110室</li>
                 <li class="item">contact@duohuo.org</li>
                 <li class="item">
                     <div class="QR">
