@@ -20,7 +20,7 @@
                             <router-link class="link" to="/Contact">联系我们</router-link>
                         </li>
                         <li class="meun-item">
-                            <a class="link" href="https://github.com/B-sirius/2017_duohuo_recruitment" target="_blank">2017招新</a>
+                            <a class="link" href="https://www.duohuo.org/zhaoxin/" target="_blank">2018招新</a>
                         </li>
                     </ul>
                 </div>
