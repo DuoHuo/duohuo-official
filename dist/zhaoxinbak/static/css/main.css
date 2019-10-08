@@ -1,0 +1,42 @@
+@media (min-width: 1024px) {
+  .wrap-container {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+  }
+  .doc-container {
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  .doc-container .doc-content {
+    padding-left: 20px;
+  }
+  .doc-container .doc-content blockquote {
+    margin-left: 0;
+  }
+  .doc-container button {
+    margin-top: 20px;
+  }
+  .doc-container button a {
+    color: #fff;
+  }
+}
+@media (max-width: 1024px) {
+  .doc-container {
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  .doc-container .doc-content h1 {
+    padding-left: 10px;
+  }
+  .doc-container .doc-content blockquote {
+    margin-left: 0;
+  }
+  .doc-container button {
+    margin-top: 20px;
+  }
+  .doc-container button a {
+    color: #fff;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>招新</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./static/mdui-v0.4.1/css/mdui.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./static/css/main.css" />
+  </head>
+<body class="mdui-theme-primary-indigo mdui-appbar-with-toolbar mdui-drawer-body-left">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="menu-button-show" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
+      <a href="javascript:;" class="mdui-typo-title">多火招新题</a>
+    </div>
+  </div>
+
+  <div class="wrap-container">
+    <div class="nav-list mdui-drawer" id="left-drawer">
+      <ul class="mdui-list">
+        <li class="mdui-list-item mdui-ripple" data-url="index">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">near_me</i>
+          <div class="mdui-list-item-content">README</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="frontEnd">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">web</i>
+          <div class="mdui-list-item-content">前端组</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="ai">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-brown">view_carousel</i>
+          <div class="mdui-list-item-content">AI组</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="python">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">computer</i>
+          <div class="mdui-list-item-content">Python组</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="design">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">create</i>
+          <div class="mdui-list-item-content">设计组</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="java">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-lime">keyboard</i>
+          <div class="mdui-list-item-content">Java组</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="security">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">settings_input_component</i>
+          <div class="mdui-list-item-content">安全组</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple" data-url="secretary">
+          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-pink">layers</i>
+          <div class="mdui-list-item-content">秘书组</div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="doc-container">
+      <div class="mdui-typo doc-content">
+        <h1>README</h1>
+        <blockquote>
+          <p>欢迎你参加多火招新，请完成任意一组的题目，并填写个人信息登记表，发至指定邮箱。通过测试后即可加入多火的大家庭，期待与你们相见。</p>
+          <footer> ——多火工作室 </footer>
+        </blockquote>
+        <button class="mdui-btn mdui-color-pink-accent mdui-ripple"><a href="./static/file/个人信息登记表.xlsx" download="./static/file/个人信息登记表.xlsx">下载报名表</a></button>
+      </div>
+    </div>
+  </div>
+  <script src="./static/mdui-v0.4.1/js/mdui.min.js"></script>
+  <script src="./static/js/main.js"></script>
+</body>
+</html>
