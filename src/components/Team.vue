@@ -2,7 +2,7 @@
  * @Description: Team.vue
  * @Author: b-sirius
  * @Date: 2019-09-30 12:27:14
- * @LastEditTime: 2019-09-30 17:50:57
+ * @LastEditTime: 2019-10-08 17:15:33
  * @LastEditors: xiaoqi
  -->
 <template>
@@ -43,7 +43,7 @@
                     <div class="team-card" @click="activeCard(1)" :class="cardPosClass(cardIndex[1])">
                         <div class="icon team1"></div>
                         <p class="title">开发组</p>
-                        <p class="text">正如字面所说，进行各种项目业务的开发，偶尔可能造造轮子，前端，后端（java, php等），iOS，安卓开发皆属此列</p>
+                        <p class="text">正如字面所说，进行各种项目业务的开发，偶尔可能造造轮子，前端，后端（Java, PHP等），ios，安卓开发皆属此列</p>
                     </div>
                     <div class="team-card" @click="activeCard(2)" :class="cardPosClass(cardIndex[2])">
                         <div class="icon team2"></div>
@@ -102,80 +102,44 @@ export default {
             memberInfo: {
                 0: [ // 极客
                     {
-                        name: '金敏睿',
-                        team: 'IOS',
-                        intro: '我是16级计算机科学与技术专业的金敏睿，大一参加了多火组织的第一届黑客松比赛并有幸加入了多火，在这个被大佬包围的组织里我学到了很多，受益匪浅，希望能学到更多感兴趣的东西',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E9%87%91%E6%95%8F%E7%9D%BF.jpg'
+                        name: '陈德品',
+                        team: 'AI组组长',
+                        intro: '欢迎来调包调参',
+                        avatar: require('../assets/avatar/chendepin.jpg')
                     },
                     {
-                        name: '芮文凡',
-                        team: '产品',
-                        intro: '我要做有吸引力的产品(●╹◡╹●)ﾉ♡',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E8%8A%AE%E6%96%87%E5%87%A1.jpg'
-                    },
-                    {
-                        name: '沈传奇',
-                        team: 'PHP',
-                        intro: '16计科三班，姓沈，名传奇，阴差阳错地进入了多火的大家庭，本人技术一般，爱聊善思，有点愣，本着多修仙，多学习的想法，向着社里的大佬看齐～(手动滑稽)',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E6%B2%88%E4%BC%A0%E5%A5%87.jpg'
+                        name: '陈煜翔',
+                        team: '安全组组长',
+                        intro: '某大三咸鱼学长，大概会点c/c++，python，java。一只摸索安全但一直爬着走的咸鱼，容我换一面撒盐继续腌。欢迎新人来一起摸鱼',
+                        avatar: require('../assets/avatar/cc.jpg')
                     }
                 ],
                 1: [ // 开发
                     {
-                        name: '周易',
-                        team: '前端',
-                        intro: '我练功发自真心',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E5%91%A8%E6%98%93.jpg'
+                        name: '洪鑫',
+                        team: '前端组组长',
+                        intro: '悟言一室之内，放浪形骸之外',
+                        avatar: require('../assets/avatar/hongxin.jpg')
                     },
                     {
-                        name: '曹青华',
-                        team: '前端',
-                        intro: '莫说我穷得叮当响，大袖揽清风。莫讥我困时无处眠，天地做床被。莫笑我渴时无美酒，大江是酒壶……',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E6%9B%B9%E9%9D%92%E5%8D%8E.jpg'            
+                        name: '包兴宇',
+                        team: 'Java组组长',
+                        intro: '什么都略懂一点，生活更辛酸一些',
+                        avatar: require('../assets/avatar/baoxingyu.jpg')            
                     },
                     {
-                        name: '常俊飞',
-                        team: 'PHP',
-                        intro: '拍黄片是坠吼的语言，我们一起深入学习观摩拍黄片，迎娶白富美，走向人生巅峰？？？（tx 。失败人士，菜鸡一只，爱好勃学？滑稽。（逃',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E5%B8%B8%E4%BF%8A%E9%A3%9E.png'
-                    },
-                    {
-                        name: '朱慧迪',
-                        team: '前端',
-                        intro: '自称是████小弟，目前学习前端，水平较菜，正在努力学习中，可完成简单设计，有希望做项目的可以找我合作',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E6%9C%B1%E6%83%A0%E8%BF%AA.jpg'
-                    },
-                    {
-                        name: '陈曦',
-                        team: 'PHP',
-                        intro: '当一条咸鱼拥有了梦想~',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E9%99%88%E6%9B%A6.jpg'
-                    },
-                    {
-                        name: '袁兴宇',
-                        team: '安卓',
-                        intro: '袁兴宇，15级软工的，再留个联系方式 qq ：3303521941。主要做java与android。',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E8%A2%81%E5%85%B4%E5%AE%87.jpg'
-                    },
-                    {
-                        name: '李杰',
-                        team: 'java',
-                        intro: '额，我真的是小白，白到不能再白了。。。对代码感兴趣，对技术感兴趣，梦想是要有的说不定就实现了呢2333,再来点字凑个字数吧，哎字数还就凑上了，真的凑上字数了哎。',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E6%9D%8E%E6%9D%B0.jpg'
+                        name: '王杰',
+                        team: 'Python组组长',
+                        intro: '简单就好',
+                        avatar: require('../assets/avatar/wangjie.jpg')
                     }
                 ],
                 2: [ // ued
                     {
-                        name: '芮文凡',
-                        team: '产品',
-                        intro: '我要做有吸引力的产品(●╹◡╹●)ﾉ♡',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E8%8A%AE%E6%96%87%E5%87%A1.jpg'
-                    },
-                    {
-                        name: '周易',
-                        team: '前端',
-                        intro: '我练功发自真心',
-                        avatar: 'http://7xrkxs.com1.z0.glb.clouddn.com/duohuoOfficial/avatar/%E5%91%A8%E6%98%93.jpg'
+                        name: '邹晨',
+                        team: '设计组组长',
+                        intro: '想学纯设计的封设的新人萌新ww',
+                        avatar: require('../assets/avatar/zhengchangshan.jpg')
                     }
                 ]
             },

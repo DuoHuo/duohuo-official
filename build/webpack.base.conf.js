@@ -1,3 +1,10 @@
+/*
+ * @Description: webpack配置 （调整了一下 base64限制）
+ * @Author: b-sirius
+ * @Date: 2019-09-30 12:26:13
+ * @LastEditTime: 2019-10-08 16:49:52
+ * @LastEditors: xiaoqi
+ */
 var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
@@ -41,7 +48,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
+          limit: 12000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
