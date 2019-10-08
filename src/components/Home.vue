@@ -1,3 +1,10 @@
+<!--
+ * @Description: Home.vue
+ * @Author: b-sirius
+ * @Date: 2019-09-30 12:27:14
+ * @LastEditTime: 2019-09-30 17:42:17
+ * @LastEditors: xiaoqi
+ -->
 <template>
     <div class="index">
         <div class="content">
@@ -19,7 +26,7 @@
                         <span class="black letter">e</span>
                     </h3>
                     <p class="text">
-                        根据咱成员的不同专攻领域，多火有自发形成的安卓，Java，Python，前端，设计，产品，运维等多个小组。如果你也对以上领域有兴趣，这里有与你志同道合的人一起耍子；如果你他喵的还有其他专长，如安全，iOS开发，Steam剁手等，请成为我们的新技能树 _(:3 」∠ )_
+                        根据咱成员的不同专攻领域，多火有自发形成的Java，Python，前端，设计，安全，AI，运维等多个小组。如果你也对以上领域有兴趣，这里有与你志同道合的人一起耍子；如果你他喵的还有其他专长，如iOS开发，Steam剁手等，请成为我们的新技能树 _(:3 」∠ )_
                     </p>
                 </div>
                 <div class="white-container">

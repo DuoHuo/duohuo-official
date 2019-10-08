@@ -1,10 +1,17 @@
+<!--
+ * @Description: Contact.vue
+ * @Author: b-sirius
+ * @Date: 2019-09-30 12:27:14
+ * @LastEditTime: 2019-10-08 11:15:56
+ * @LastEditors: xiaoqi
+ -->
 <template>
     <div class="contact">
         <div class="content">
             <div class="intro">
                 <h2 class="title">联系我们</h2>
                 <p class="text">
-                    这是咱的联系方式，24h开通！活动合作和意见反馈等均可通过此联系，请认真填写【鞠躬】。特别一提，如果你是想加入多火，同样可在此申请，并在留言中展示出你的技术面或学习热情。学科2楼c110，欢迎您拎包入住！
+                    这是咱的联系方式，24h开通！活动合作和意见反馈等均可通过此联系，请认真填写【鞠躬】。特别一提，如果你是想加入多火，同样可在此申请，并在留言中展示出你的技术面或学习热情。图书馆605，欢迎您拎包入住！
                 </p>
             </div>
             <div class="form">
@@ -32,12 +39,16 @@
                     <div class="contact-info">
                         <h3 class="title">联系方式</h3>
                         <div class="item">
+                            <p class="subtitle">QQ招新群</p>
+                            <p class="text">564307340</p>
+                        </div>
+                        <div class="item">
                             <p class="subtitle">邮箱</p>
                             <p class="text">contact@duohuo.org</p>
                         </div>
                         <div class="item">
                             <p class="subtitle">地址</p>
-                            <p class="text">学科2号楼C110室</p>
+                            <p class="text">图书馆605</p>
                         </div>
                         <div class="QR">
                             <img src="../assets/QR.png" class="qr-img">

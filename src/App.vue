@@ -1,3 +1,10 @@
+<!--
+ * @Description: App.vue
+ * @Author: b-sirius
+ * @Date: 2019-09-30 12:27:14
+ * @LastEditTime: 2019-09-30 18:59:03
+ * @LastEditors: xiaoqi
+ -->
 <template>
     <div id="app">
         <header class="header">
@@ -20,7 +27,7 @@
                             <router-link class="link" to="/Contact">联系我们</router-link>
                         </li>
                         <li class="meun-item">
-                            <a class="link" href="https://www.duohuo.org/zhaoxin/" target="_blank">2018招新</a>
+                            <a class="link" href="https://www.duohuo.org/zhaoxin/" target="_blank">2019招新</a>
                         </li>
                     </ul>
                 </div>
@@ -81,17 +88,17 @@ let pageHandler = {
 // }
 
 let headerBgHandler = {
-    'home': function() {
-        this._lazyLoadBackground(this.$refs.headerBackground, banner);
+    'home': function(isFirst) {
+        this._lazyLoadBackground(this.$refs.headerBackground, banner, isFirst);
     },
-    'team': function() {
-        this._lazyLoadBackground(this.$refs.headerBackground, banner);
+    'team': function(isFirst) {
+        this._lazyLoadBackground(this.$refs.headerBackground, banner, isFirst);
     },
-    'project': function() {
-        this._lazyLoadBackground(this.$refs.headerBackground, banner);
+    'project': function(isFirst) {
+        this._lazyLoadBackground(this.$refs.headerBackground, banner, isFirst);
     },
-    'contact': function() {
-        this._lazyLoadBackground(this.$refs.headerBackground, banner);
+    'contact': function(isFirst) {
+        this._lazyLoadBackground(this.$refs.headerBackground, banner, isFirst);
     }
 }
 
@@ -105,27 +112,45 @@ export default {
     watch: {
         routeName: function() {
             this.scrollTo(0, 0.25);
-            headerBgHandler[this.routeName].apply(this);
+            headerBgHandler[this.routeName].call(this, false);
         }
     },
     methods: {
-        _lazyLoadBackground: function(container, src) {
+        /**
+         * @description: 路由切换 banner动效
+         * @param {DOM} 目标 DOM
+         * @param {String}  图片路径
+         * @param {Boolean}  是否没有切换路径
+         * @return: 
+         */        
+        _lazyLoadBackground: function(container, src, isFirst) {
             let img = new Image();
             img.src = src;
 
+            
+            // 改动理由：切换路径时 500ms后执行 banner展示，用户没有切换路径时，个人认为应该立即显示，减少首页展示时间
+            // 暂时不改了，如果有需求后面改动
+            let time = isFirst ? 500 : 500;
             let self = this;
             img.onload = function() {
                 setTimeout(() => {
                     container.style.background = 'url(' + src + ')';
                     container.style.backgroundSize = 'cover';
                     self.backgroundShow = true;
-                }, 500);
+                }, time);
             }
             this.backgroundShow = false;
         },
         changePage: function(arg) {
+            console.log('触发changePage');
             pageHandler[arg].apply(this);
         },
+        /**
+         * @description: 路由切换时触发视区滚动
+         * @param {Number} to 滚动目标位置 
+         * @param {Number} time 时间
+         * @return: 
+         */        
         scrollTo: function(to, time) {
             let from = document.documentElement.scrollTop;
             let speed = (to - from) / 60 / time;
@@ -140,10 +165,11 @@ export default {
         }
     },
     mounted: function() {
-        headerBgHandler[this.$route.name].apply(this);
+        headerBgHandler[this.$route.name].call(this, true);
     },
     computed: {
         routeName: function() {
+            console.log(this.$route.name);
             return this.$route.name;
         }
     }

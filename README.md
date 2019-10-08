@@ -1,21 +1,14 @@
-# duohuo-official
+# 多火官网
 
 > A Vue.js project
 
-## Build Setup
+## 更新日志
 
-``` bash
-# install dependencies
-npm install
+### v1.0.0
 
-# serve with hot reload at localhost:8080
-npm run dev
+作者：b-sirius
 
-# build for production with minification
-npm run build
+* 主页
+* 团队介绍
+* 联系我们
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

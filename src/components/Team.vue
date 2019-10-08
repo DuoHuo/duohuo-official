@@ -1,3 +1,10 @@
+<!--
+ * @Description: Team.vue
+ * @Author: b-sirius
+ * @Date: 2019-09-30 12:27:14
+ * @LastEditTime: 2019-09-30 17:50:57
+ * @LastEditors: xiaoqi
+ -->
 <template>
     <div class="team">
         <div class="content">
@@ -5,6 +12,10 @@
                 <h2 class="title">团队概况</h2>
                 <p class="text">
                     针对成员的不同发展方向，我们设置了三个团队，分别是极客，开发和UED(用户体验设计)。即使你在入门时还没有决定好方向，当技术积累到一定程度后，总将在他们之间做出抉择。而这所谓的分组目前只是一个方向上的参考，你完全可以加入多个组。
+                </p>
+                </br>
+                <p class="text">
+                    注：团队组成现在有所改动，详情可见招新题栏目
                 </p>
             </div>
             <!-- <div class="main-content">
