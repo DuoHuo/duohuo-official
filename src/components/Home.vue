@@ -2,7 +2,7 @@
  * @Description: Home.vue
  * @Author: b-sirius
  * @Date: 2019-09-30 12:27:14
- * @LastEditTime: 2019-09-30 17:42:17
+ * @LastEditTime: 2019-10-09 11:06:08
  * @LastEditors: xiaoqi
  -->
 <template>
@@ -141,7 +141,9 @@ $text: 14px;
 $lineHeight: 22.65px;
 @font-face {
     font-family: "PangMenZhengDao";
-    src: url("../assets/PangMenZhengDao.ttf");
+    // src: url("../assets/PangMenZhengDao.ttf");
+    src: url("../assets/PangMenZhengDao.woff2") format("woff2"),
+        url("../assets/PangMenZhengDao.woff") format("woff");
 }
 
 .index {

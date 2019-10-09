@@ -2,7 +2,7 @@
  * @Description: App.vue
  * @Author: b-sirius
  * @Date: 2019-09-30 12:27:14
- * @LastEditTime: 2019-09-30 18:59:03
+ * @LastEditTime: 2019-10-09 11:10:13
  * @LastEditors: xiaoqi
  -->
 <template>
@@ -129,8 +129,7 @@ export default {
 
             
             // 改动理由：切换路径时 500ms后执行 banner展示，用户没有切换路径时，个人认为应该立即显示，减少首页展示时间
-            // 暂时不改了，如果有需求后面改动
-            let time = isFirst ? 500 : 500;
+            let time = isFirst ? 0 : 500;
             let self = this;
             img.onload = function() {
                 setTimeout(() => {
