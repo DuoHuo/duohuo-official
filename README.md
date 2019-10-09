@@ -1,5 +1,7 @@
 # 多火官网
 
+链接：[https://www.duohuo.org/](https://www.duohuo.org/)
+
 > A Vue.js project
 
 ## 更新日志
